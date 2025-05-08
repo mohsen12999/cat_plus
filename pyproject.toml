@@ -1,7 +1,7 @@
 [project]
-name = "cat-plus"
+name = "cat_plus"
 version = "0.1.0"
-description = "Add your description here"
+description = "a simple cli app for show file in terminal"
 readme = "README.md"
 authors = [
     { name = "mohsen1299@gmail.com", email = "mohsen1299@gmail.com" }
@@ -10,8 +10,13 @@ requires-python = ">=3.11"
 dependencies = []
 
 [project.scripts]
-cat-plus = "cat_plus:main"
+cat_plus = "cat_plus.cat_plus:main"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+
+[tool.pytest]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
